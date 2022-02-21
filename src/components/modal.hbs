@@ -1,0 +1,18 @@
+<div class="modal">
+    <div class="modal__container">
+        <div class="modal__title text-m-l">{{title}}</div>
+    <div class="modal__content">
+        <form>
+            {{#if load }}
+                <div class="field">
+                    <input class="field__load text-m" type="file" accept=".jpg, .jpeg, .png"><br>
+                </div>
+            {{else}}
+                {{> field}}
+            {{/if}}
+            {{> button text="Поменять"}}
+        </form>
+    </div>
+    <div class="modal__subtitle"></div>
+    </div>
+</div>

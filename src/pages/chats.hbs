@@ -1,0 +1,19 @@
+<main class="layout chats">
+  <div class="sidebar">
+      {{> link href = "./profile" text = "Профиль >"}}
+      <br>
+      <div class="chats__search__container">
+          <input class="chats__search text-m" type="text" name="search" placeholder="Поиск" onfocus="this.placeholder=''" onblur="this.placeholder='Поиск'">
+      </div>
+      <nav>
+          <ul class="chats__list">
+              {{#each chats}}
+              {{>  chat name = this.name  isLast = this.isLast message = this.message time = this.time notes = this.notes}}
+              {{/each}}
+          </ul>
+      </nav>
+  </div>
+  <div class="chat_body empty text-m">
+      Выберите чат, чтобы отправить сообщение
+  </div> 
+</main>

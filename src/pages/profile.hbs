@@ -1,0 +1,38 @@
+<main class="layout profile">
+  <div class="profile_sidebar">
+      <a class="link-back" href={{href}}></a> 
+  </div>
+  <div class="profile_container">
+      <div class="profile_content">
+          <button class="avatar_img"></button>
+          <div class="avatar_name text-semi text-m-l">{{name}}</div>
+          <form class="profile_info">
+              <div class="profile_info_content">
+                  {{#each info}}
+                    {{#if changeMode}}
+                        {{> info_item label = this.label name = this.name  value = this.value}}
+                    {{else}}
+                        {{> info_item label = this.label name = this.name  value = this.value  readonle = "readonly"}}
+                    {{/if}}
+                  {{/each}}  
+              </div>
+              {{#if changeMode}}
+                {{> button text = "Сохранить"}}
+              {{/if}}
+          </form>
+          {{#if changeMode}}
+          {{else}}
+            <div class="profile_actions">
+                <nav class="profile_actions__nav">
+                    <ul class="profile_actions__list">
+                        <li class="item"><a class="link text-m" href="./info">Изменить данные</a></li>
+                        <li class="item"><a class="link text-m" href="./password">Изменить пароль</a></li>
+                        <li class="item"><a class="link text-m cancel" href="./login">Выйти</a></li>
+                    </ul>
+                </nav>
+            </div> 
+          {{/if}}                      
+    </div> 
+  </div>
+  {{>modal title = "Загрузите файл" load ="1"}}
+</main>

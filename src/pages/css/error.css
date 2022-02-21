@@ -1,0 +1,25 @@
+@import "../../layout/css/main.css";
+@import "../../components/css/*.css";
+
+.layout.login,
+.layout.error {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title_error,
+.subtitle_error {
+    color: var(--title-color);
+}
+
+.subtitle_error {
+    margin-bottom: 60px;
+}
+
+.layout.error {
+    flex-direction: column;
+}

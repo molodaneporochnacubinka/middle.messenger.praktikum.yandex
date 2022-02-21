@@ -1,0 +1,13 @@
+{
+    "chats": [
+        {"name": "Андрей", "notes": 2, "message": "Изображение", "isLast": 0, "time": "10:49"},
+        {"name": "Киноклуб", "notes": 0, "message": "стикер", "isLast": 1, "time": "12:00"},
+        {"name": "Илья", "notes": 4, "message": "Друзья, у меня для вас особенный выпуск новостей!...", "isLast": 0, "time": "15:12"},
+        {"name": "Вадим", "notes": 0, "message": "Круто!", "isLast": 1, "time": "Пт"},
+        {"name": "тет-а-теты", "notes": 0, "message": "И Human Interface Guidelines и Material Design рекомендуют...", "isLast": 0, "time": "Ср"},
+        {"name": "1, 2, 3", "notes": 0, "message": "Миллионы россиян ежедневно проводят десятки часов свое...", "isLast": 0, "time": "Пн"},
+        {"name": "Design Destroyer", "notes": 0, "message": "В 2008 году художник Jon Rafman  начал собирать...", "isLast": 0, "time": "Пн"},
+        {"name": "Day.", "notes": 0, "message": "Так увлёкся работой по курсу, что совсем забыл его анонсир...", "isLast": 0, "time": "1 Мая 2020"},
+        {"name": "Стас Рогозин", "notes": 0, "message": "Можно или сегодня или завтра ", "isLast": 0, "time": "12 Апр 2020"}
+    ]
+}
