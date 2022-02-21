@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main.  ### ВАЖНО: pull request должен называться “Sprint i” (i — номер спринта).",
   "scripts": {
-    "start": "node app.js",
+    "start": "parcel build ./src/pages/*.hbs && parcel build ./src/pages/css/*.css && parcel build ./src/pages/js/*.js && parcel build ./src/components/js/*.js && node app.js",
     "dev": "parcel build ./src/pages/*.hbs && parcel build ./src/pages/css/*.css && parcel build ./src/pages/js/*.js && parcel build ./src/components/js/*.js",
     "build": "parcel build ./src/pages/*.hbs && parcel build ./src/pages/css/*.css && parcel build ./src/pages/js/*.js && parcel build ./src/components/js/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
