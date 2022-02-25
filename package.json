@@ -19,6 +19,7 @@
   "homepage": "https://github.com/molodaneporochnacubinka/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "@parcel/config-default": "^2.3.2",
     "autoprefixer": "^10.4.2",
     "express": "^4.17.3",
     "handlebars": "^4.7.7",
