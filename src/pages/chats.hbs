@@ -1,19 +1,37 @@
-<main class="layout chats">
-  <div class="sidebar">
-      {{> link href = "./profile" text = "Профиль >"}}
-      <br>
-      <div class="chats__search__container">
-          <input class="chats__search text-m" type="text" name="search" placeholder="Поиск" onfocus="this.placeholder=''" onblur="this.placeholder='Поиск'">
-      </div>
-      <nav>
-          <ul class="chats__list">
-              {{#each chats}}
-              {{>  chat name = this.name  isLast = this.isLast message = this.message time = this.time notes = this.notes}}
-              {{/each}}
-          </ul>
-      </nav>
-  </div>
-  <div class="chat_body empty text-m">
-      Выберите чат, чтобы отправить сообщение
-  </div> 
-</main>
+{{#> main script = 'js/chats.js' style = 'css/chats.css' title = 'Чаты' themeClass = 'theme_light'}}
+    <main class="layout chats">
+        {{> chats_list chats = data.chats}}
+        <div class="chat_body">
+            <div class="chat_body__header">
+                <div class="chat_body__avatar">
+                    <div class="chat_body__avatar_img"></div>
+                    <div class="chat_body__avatar_name text-m text-semi">Вадим</div>
+                </div>
+                <button class="chat_body__menu"></button>
+            </div>
+            <div class="chat_body__content">
+                <div class="message__date text-m-s">19 июня</div>
+                {{#each data.chats.[3].messages}}
+                    {{#if this.attach}}
+                        {{> message-attach attach = this.attach time = (getTime this.date)}}
+                    {{else}}
+                        {{#if this.byUser}}
+                            {{> message text = this.text class = "user" time = (getTime this.date)}}
+                        {{else}}
+                            {{#if @first}}
+                                {{> message text = this.text containerClass = "group" time = (getTime this.date)}}
+                            {{else}}
+                                {{> message text = this.text time = (getTime this.date)}}
+                            {{/if}}
+                        {{/if}}
+                    {{/if}}
+                {{/each}}
+            </div>
+            <div class="chat_body__footer">
+                <button class="chat_body__attach"></button>
+                <input class="chat_body__message text-m" type="text" name="message" placeholder="Сообщение" onfocus="this.placeholder=''" onblur="this.placeholder='Сообщение'">
+                <button class="chat_body__send"></button>
+            </div>
+        </div>
+    </main>
+{{/main}}

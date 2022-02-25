@@ -1,7 +1,7 @@
+import { changeLocation } from './common';
+
 window.onload = function() {
     const chats = document.querySelectorAll('.chat');
-    const chatBody = document.querySelector('.chat_body');
-    const chatBodyTemplate = Handlebars.templates['chat_body.hbs'];
     chats.forEach((element) => {
 
         element.onclick = function() {
@@ -16,8 +16,8 @@ window.onload = function() {
             prevChat.classList.remove('active');
         }
         chat.classList.add('active');
-        chatBody.classList.remove('empty');
-        chatBody.innerHTML = chatBodyTemplate({name: 'Вадим'});
+        changeLocation('chats.html');
+
     }
 }
 

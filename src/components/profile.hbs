@@ -8,13 +8,7 @@
           <div class="avatar_name text-semi text-m-l">{{name}}</div>
           <form class="profile_info">
               <div class="profile_info_content">
-                  {{#each info}}
-                    {{#if changeMode}}
-                        {{> info_item label = this.label name = this.name  value = this.value}}
-                    {{else}}
-                        {{> info_item label = this.label name = this.name  value = this.value  readonle = "readonly"}}
-                    {{/if}}
-                  {{/each}}  
+                {{> @partial-block}}
               </div>
               {{#if changeMode}}
                 {{> button text = "Сохранить"}}
@@ -25,9 +19,9 @@
             <div class="profile_actions">
                 <nav class="profile_actions__nav">
                     <ul class="profile_actions__list">
-                        <li class="item"><a class="link text-m" href="./info">Изменить данные</a></li>
-                        <li class="item"><a class="link text-m" href="./password">Изменить пароль</a></li>
-                        <li class="item"><a class="link text-m cancel" href="./login">Выйти</a></li>
+                        <li class="item"><a class="link text-m" href="user-info.hbs">Изменить данные</a></li>
+                        <li class="item"><a class="link text-m" href="user-password.hbs">Изменить пароль</a></li>
+                        <li class="item"><a class="link text-m cancel" href="index.hbs">Выйти</a></li>
                     </ul>
                 </nav>
             </div> 

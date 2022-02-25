@@ -1,6 +1,3 @@
-@import "../../layout/css/main.css";
-@import "../../components/css/*.css";
-
 .layout.login,
 .layout.error {
     display: flex;

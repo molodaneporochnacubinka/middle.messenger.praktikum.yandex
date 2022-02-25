@@ -1,15 +1,15 @@
 ### Веб-приложение «Чат»
 ---
 
-Этот проект - учебный прототип веб-мессенджера. 
+Учебный проект на курсе Яндекс.Практикум (Мидл фронтенд-разработчик) - прототип веб-мессенджера. 
 
 ## Стек используемых технологий
 
 1. **JavaScript**
-2. **CSS**, **PostCSS**
-3. **Netlify**
-4. **NodeJS**
-5. Сборщик **Parcel**
+2. **CSS**, [**PostCSS**](https://postcss.org/)
+3. [**Netlify**](https://www.netlify.com/)
+4. [**NodeJS**](https://nodejs.org/)
+5. Сборщик [**Parcel**](https://parceljs.org/)
 6. Шаблонизатор [**Handlebars**](https://handlebarsjs.com/)
 
 ## Макеты экранов

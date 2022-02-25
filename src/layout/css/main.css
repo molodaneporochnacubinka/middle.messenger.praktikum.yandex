@@ -13,7 +13,9 @@ html,body {
     --grey-very-light: #FBFBFB;
     --grey-light-1: #EFEFEF;
     --grey-light-2: #EAEAEA;
+    --grey-light-3: #F8F8F8;
     --grey: #999999;
+    --dark-gray: rgba(82, 82, 82, 0.5);
     --black: #1E1E1E;
     --red: #FF2F2F;
     --ligth-blue: #E4EDFD;
@@ -21,19 +23,21 @@ html,body {
     --font-size-l: 20px;
     --font-size-m-l: 16px;
     --font-size-m: 13px;
-    --font-size-s-m: 11px;
+    --font-size-s-m: 12px;
     --font-size-s: 9px;
     --line-height-x-l: 40px;
     --line-height-l: 22px;
     --line-height-m-l: 16px;
     --line-height-m: 15px;
-    --line-height-s-m: 12px;
+    --line-height-s-m: 15px;
     --line-height-s: 11px;
     --sidebar-width: 310px;
     --sidebar-width: 310px;
     --gap-s: 10px;
     --gap-m: 20px;
-    --gap-l: 40px;  
+    --gap-m-l: 30px;
+    --gap-l: 40px;
+    --chats-header-height: 55px;
 }
 
 .theme_light {
@@ -43,16 +47,13 @@ html,body {
     --accent-color: #3369F3;
     --btn-color: var(--white);
     --bg-msg-color: var(--grey-very-light);
+    --bg-msg-view-color: var(--grey-light-3);
     --bg-color: var(--grey-light-1);
     --bg-accent-color: var(--ligth-blue);
+    --bg-meta-color: var(--dark-gray);
     --border-color: var(--grey-light-2);
     --notes-color: var(--white);
     --invalid-color: var(--red);
-    --btn-arrow-bg-url: url('../../../static/images/arrow.svg');
-    --photo-bg-url: url('../../../static/images/photo.svg');
-    --search-icon-url: url('../../../static/images/search.svg');
-    --btn-menu-bg-url: url('../../../static/images/menu.svg');
-    --btn-attach-bg-url: url('../../../static/images/attach.svg');
 }
 
 .text-x-l {

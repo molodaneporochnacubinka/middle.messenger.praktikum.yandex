@@ -2,11 +2,9 @@
   <div class="form__container">
     <h1 class="form__title text-l">{{title}}</h1>
     <form class="form login">
-      {{#each fields}}
-        {{> field label = this.label name = this.name}}
-      {{/each}}   
+      {{> @partial-block}}
       {{> button text=btnText }}
-      {{> link href=link.href text=link.text}}        
+      {{> link href=href text=linkText}}        
     </form>
   </div> 
 </main>

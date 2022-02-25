@@ -1,5 +1,7 @@
-@import "../../layout/css/main.css";
-@import "../../components/css/*.css";
+.theme_light {
+    --btn-arrow-bg-url: url('../../../static/images/arrow.svg');
+    --photo-bg-url: url('../../../static/images/photo.svg');
+}
 
 .layout.profile {
     display: flex;

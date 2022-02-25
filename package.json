@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main.  ### ВАЖНО: pull request должен называться “Sprint i” (i — номер спринта).",
   "scripts": {
-    "start": "parcel build ./src/pages/*.hbs && parcel build ./src/pages/css/*.css && parcel build ./src/pages/js/*.js && parcel build ./src/components/js/*.js && node app.js",
-    "dev": "parcel build ./src/pages/*.hbs && parcel build ./src/pages/css/*.css && parcel build ./src/pages/js/*.js && parcel build ./src/components/js/*.js",
-    "build": "parcel build ./src/pages/*.hbs && parcel build ./src/pages/css/*.css && parcel build ./src/pages/js/*.js && parcel build ./src/components/js/*.js",
+    "build": "parcel build src/pages/*.hbs --no-cache --no-source-maps",
+    "start": "parcel build src/pages/*.hbs && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,9 +18,9 @@
   },
   "homepage": "https://github.com/molodaneporochnacubinka/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
-    "@parcel/resolver-glob": "^2.3.2",
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "autoprefixer": "^10.4.2",
     "express": "^4.17.3",
-    "express-handlebars": "^6.0.2",
     "handlebars": "^4.7.7",
     "parcel": "^2.3.2"
   }
