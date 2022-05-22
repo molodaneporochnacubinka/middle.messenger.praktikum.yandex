@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main.  ### ВАЖНО: pull request должен называться “Sprint i” (i — номер спринта).",
   "scripts": {
-    "build": "parcel build src/pages/*.hbs",
-    "start": "parcel build src/pages/*.hbs && node app.js",
+    "dev": "parcel src/pages/*.html --no-cache",
+    "lint": "eslint . --fix --ext .ts",
+    "build": "parcel build src/pages/*.html",
+    "start": "parcel build src/pages/*.html && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,12 +20,18 @@
   },
   "homepage": "https://github.com/molodaneporochnacubinka/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
-    "@anikin/parcel-transformer-handlebars": "^1.0.9",
-    "@parcel/config-default": "^2.3.2",
-    "autoprefixer": "^10.4.2",
-    "express": "^4.17.3",
-    "handlebars": "^4.7.7",
+    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "express": "^4.18.1",
+    "nanoid": "^3.3.4",
     "parcel": "^2.3.2",
-    "postcss": "^8.4.7"
+    "postcss": "^8.4.13",
+    "postcss-modules": "^4.3.1",
+    "postcss-nested": "^5.0.6",
+    "stylelint": "^14.8.3"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7"
   }
 }

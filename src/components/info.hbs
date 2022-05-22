@@ -1,7 +1,0 @@
-{{#each info}}
-    {{#if changeMode}}
-        {{> info-item label = this.label name = this.name  value = this.value}}
-    {{else}}
-        {{> info-item label = this.label name = this.name  value = this.value  readonly = "readonly"}}
-    {{/if}}
-{{/each}}  
