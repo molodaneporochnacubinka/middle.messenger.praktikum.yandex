@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="{{style}}">
+  {{#if script}}
+    <script src="{{script}}" type="module"></script>
+  {{/if}}
+  <title>
+    {{title}}
+  </title>
+</head>
+<body class={{themeClass}}>
+  {{> @partial-block}}
+</body>
+</html>

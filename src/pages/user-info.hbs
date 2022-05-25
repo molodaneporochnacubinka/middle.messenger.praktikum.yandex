@@ -1,0 +1,5 @@
+{{#> main script = 'js/user-info.js' style = 'css/user.css' title = 'Изменить данные' themeClass = 'theme_light'}}
+    {{#> profile href = 'user.hbs' name = data.user.name changeMode = 1}}
+        {{> info info = data.user.info changeMode = 1}}
+    {{/profile}}  
+{{/main}}

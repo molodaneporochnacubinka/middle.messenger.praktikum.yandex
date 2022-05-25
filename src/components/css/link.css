@@ -1,0 +1,8 @@
+.link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.link.cancel {
+    color: var(--invalid-color);
+}
