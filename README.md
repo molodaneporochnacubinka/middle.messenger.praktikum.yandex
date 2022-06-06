@@ -3,6 +3,7 @@
 
 Учебный проект на курсе Яндекс.Практикум (Мидл фронтенд-разработчик) - прототип веб-мессенджера. 
 
+
 ## Стек используемых технологий
 
 1. Типизация - [**TypeScript**](https://www.typescriptlang.org/)
@@ -13,9 +14,10 @@
 5. Сборщик - [**Parcel**](https://parceljs.org/)
 6. Шаблонизатор - [**Handlebars**](https://handlebarsjs.com/)
 
+
 ## Установка и запуск приложения
 
-Для утсановки и запуска приложения необходимо выбполнить следующие команды:
+Для установки и запуска приложения необходимо выбполнить следующие команды:
 
 - `npm install` — установка стабильной версии,
 - `npm run lint` — линтинг скриптов,
@@ -25,12 +27,7 @@
 
 После выполнения команд приложение будет доступно по ссылке http://localhost:3000/
 
-## Pull request
-
-https://github.com/molodaneporochnacubinka/middle.messenger.praktikum.yandex/pull/2
 
 ## Домен на Netlify
 
 https://trusting-jones-fc4d83.netlify.app/
-
-
