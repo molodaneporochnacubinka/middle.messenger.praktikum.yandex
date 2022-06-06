@@ -1,4 +1,5 @@
 import Block from "../../utils/Block";
+import { getTime } from "../../utils/getTime";
 import * as styles from "../Message/message.pcss";
 import * as mainstyles from "../../layout/css/main.pcss";
 
@@ -14,7 +15,7 @@ export class MessageAttach extends Block {
   constructor({ attach, time, byUser }: MessageAttachProps) {
     super({
       attach,
-      time,
+      time: getTime(time),
       byUser,
     });
   }

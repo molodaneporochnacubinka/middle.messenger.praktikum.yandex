@@ -1,6 +1,6 @@
 import Block from "../../utils/Block";
 import * as styles from "./form-info.pcss";
-import { validateForm } from "../../utils/validateForm";
+import { validateComponent } from "../../utils/validateComponent";
 import * as mainstyles from "../../layout/css/main.pcss";
 
 interface FormInfoProps {
@@ -21,7 +21,7 @@ export class FormInfo extends Block {
       events: {
         submit: (event) => {
           event.preventDefault();
-          const { valid, data } = validateForm(this);
+          const { valid, data } = validateComponent(this);
           console.log(data);
           if (valid) {
             onSubmit();
@@ -52,7 +52,7 @@ export class FormInfo extends Block {
                 {{/if}}           
             </div>
             {{#if changeMode}}
-                {{{ Button label=buttonLabel }}}
+                {{{ Button className="button" label=buttonLabel }}}
             {{/if}}
         </form>
         `;

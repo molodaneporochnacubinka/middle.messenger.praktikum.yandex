@@ -18,9 +18,9 @@ class Block {
 
   private _meta: { props: any };
 
-  protected props: any;
+  props: any;
 
-  protected children: Record<string, Block>;
+  children: Record<string, Block>;
 
   private eventBus: () => EventBus;
 
@@ -207,12 +207,6 @@ class Block {
     const fragment = this._createDocumentElement(
       "template"
     ) as HTMLTemplateElement;
-
-    // Object.entries(this.children).forEach(([key, child]) => {
-    //   context[key] = `<div data-id="id-${child.id}"></div>`
-    // })
-
-    // const htmlString = template(context);
 
     const template = Handlebars.compile(templateString);
 

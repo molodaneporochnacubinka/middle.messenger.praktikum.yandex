@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     linkClass: "sidebar",
     searchText: "Поиск",
     chats,
-    initial: 1,
+    initial: true,
     emptyText: "Выберите чат, чтобы отправить сообщение",
   });
   renderDOM("#app", chatsPage);

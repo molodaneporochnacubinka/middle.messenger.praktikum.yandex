@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     name: data.user.name,
     buttonLabel: "Сохранить",
     location: "user.html",
-    changeMode: 1,
+    changeMode: true,
     backLinkHref: "user.html",
     info,
     modalTitle: "Загрузите файл",

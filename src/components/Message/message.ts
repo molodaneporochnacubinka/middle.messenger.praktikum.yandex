@@ -1,4 +1,5 @@
 import Block from "../../utils/Block";
+import { getTime } from "../../utils/getTime";
 import * as styles from "./message.pcss";
 import * as mainstyles from "../../layout/css/main.pcss";
 
@@ -15,7 +16,7 @@ export class Message extends Block {
   constructor({ text, time, byUser }: MessageProps) {
     super({
       text,
-      time,
+      time: getTime(time),
       byUser,
     });
   }

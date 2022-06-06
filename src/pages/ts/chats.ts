@@ -25,17 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     linkClass: "sidebar",
     searchText: "Поиск",
     chats,
-    initial: 0,
+    initial: false,
     messages: chats[3].messages,
     messageText: "Сообщение",
+    btnClassName: "chat_body__send",
     chatAvatar: "",
     chatName: chats[3].name,
   });
   renderDOM("#app", chatsPage);
-
-  setTimeout(() => {
-    // loginPage.setProps({
-    //     buttonLabel: 'Click me please'
-    // });
-  }, 3000);
 });

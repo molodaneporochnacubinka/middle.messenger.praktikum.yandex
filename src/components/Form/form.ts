@@ -1,6 +1,6 @@
 import Block from "../../utils/Block";
 import * as styles from "./form.pcss";
-import { validateForm } from "../../utils/validateForm";
+import { validateComponent } from "../../utils/validateComponent";
 import * as mainstyles from "../../layout/css/main.pcss";
 
 interface FormProps {
@@ -29,7 +29,7 @@ export class Form extends Block {
       events: {
         submit: (event) => {
           event.preventDefault();
-          const { valid, data } = validateForm(this);
+          const { valid, data } = validateComponent(this);
           console.log(data);
           if (valid) {
             onSubmit();
@@ -48,7 +48,7 @@ export class Form extends Block {
                     {{{ Input name=this.name className="field__input" type=this.type value=this.value }}}
                 </div>
             {{/each}}
-            {{{ Button label=buttonLabel }}} 
+            {{{ Button className ="button" label=buttonLabel }}} 
             {{{ Link href=linkHref text=linkText }}}       
         </form>    
         `;

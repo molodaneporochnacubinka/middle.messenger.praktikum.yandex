@@ -7,9 +7,6 @@ export function renderDOM(rootSelector: string, component: Block) {
     throw new Error("Root is not found");
   }
 
-  // @ts-ignore
-  root.style.height = "100%";
-
   component.dispatchComponentDidMount();
 
   root.innerHTML = "";

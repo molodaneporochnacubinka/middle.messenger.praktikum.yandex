@@ -14,7 +14,7 @@ interface InputProps {
 export class Input extends Block {
   static getComponentName = "Input";
 
-  protected value = "";
+  value = "";
 
   constructor({ name, className, value, placeholder, readonly }: InputProps) {
     super({

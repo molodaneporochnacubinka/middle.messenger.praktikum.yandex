@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const profilePage = new ProfilePage({
     name: data.user.name,
-    changeMode: 0,
+    changeMode: false,
     backLinkHref: "chats-initial.html",
     info: data.user.info,
     modalTitle: "Загрузите файл",
@@ -36,10 +36,4 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
   });
   renderDOM("#app", profilePage);
-
-  setTimeout(() => {
-    // profilePage.setProps({
-    //     name: 'Рада'
-    // });
-  }, 3000);
 });

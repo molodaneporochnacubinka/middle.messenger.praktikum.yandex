@@ -1,4 +1,5 @@
 import Block from "../../utils/Block";
+import { validateComponent } from "../../utils/validateComponent";
 import * as styles from "./chats.pcss";
 import * as mainstyles from "../../layout/css/main.pcss";
 
@@ -12,12 +13,13 @@ interface ChatsPageProps {
     emptyText?: string;
     messages?: Array<any>;
     messageText?: string;
+    btnClassName?: string;
     chatAvatar?: string;
     chatName?: string;
 }
 
 export class ChatsPage extends Block {
-    constructor({ linkText, linkHref, linkClass, searchText, chats, initial, emptyText, messages, messageText, chatAvatar, chatName }: ChatsPageProps) {
+    constructor({ linkText, linkHref, linkClass, searchText, chats, initial, emptyText, messages, messageText, btnClassName, chatAvatar, chatName }: ChatsPageProps) {
     super({
         linkText,
         linkHref,
@@ -28,12 +30,16 @@ export class ChatsPage extends Block {
         emptyText,
         messages,
         messageText,
+        btnClassName,
         chatAvatar,
         chatName,
+        onClick: (event) => {
+            const { valid, data } = validateComponent(this);
+            console.log(data);
+        }
     });
   }
   render() {
-      console.log(this.props.onClick);
     return `
 <main class="${mainstyles.theme_light} ${styles.layout} ${styles.chats}">
     <div class="${styles.sidebar}">
@@ -80,7 +86,7 @@ export class ChatsPage extends Block {
             <div class="${styles.chat_body__footer}">
                 <button class="${styles.chat_body__attach}"></button>
                 {{{ Input name="message" className="chat_body__message" placeholder=messageText }}}
-                <button class="${styles.chat_body__send}"></button>
+                {{{ Button className=btnClassName label='' onClick=onClick }}}
             </div>
         </div>
         {{/if}} 

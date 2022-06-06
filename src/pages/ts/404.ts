@@ -12,6 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
     linkHref: "chats.html",
   });
   renderDOM("#app", errorPage);
-
-  setTimeout(() => {}, 3000);
 });

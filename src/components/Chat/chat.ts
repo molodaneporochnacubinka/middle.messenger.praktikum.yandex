@@ -16,7 +16,6 @@ export class Chat extends Block {
   static getComponentName = "Chat";
 
   constructor({ name, isLast, message, time, notes, onClick }: ChatProps) {
-    console.log(onClick);
     super({
       name,
       isLast,
@@ -25,7 +24,6 @@ export class Chat extends Block {
       notes,
       events: {
         click: (event) => {
-            console.log(this);
             const prevChat = document.querySelector(`.${styles.chat}.${styles.active}`);
              if (prevChat) {
                  prevChat.classList.remove(`${styles.active}`);
