@@ -25,7 +25,12 @@
 
 После выполнения команд приложение будет доступно по ссылке http://localhost:3000/
 
+## Pull request
+
+https://github.com/molodaneporochnacubinka/middle.messenger.praktikum.yandex/pull/2
+
 ## Домен на Netlify
 
 https://trusting-jones-fc4d83.netlify.app/
+
 
