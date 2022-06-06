@@ -1,75 +1,65 @@
 .message__container {
-    display: flex;
-    margin-bottom: var(--gap-m-l);
+  display: flex;
+  margin-bottom: var(--gap-m-l);
 }
 
 .message__container.group {
-    margin-bottom: var(--gap-s);
+  margin-bottom: var(--gap-s);
 }
 
 .message__container .user {
-    margin-left: auto;
-    margin-right: 0;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .message.text {
-    position: relative;
-    min-width: 100px;
-    max-width: 400px;
-    background-color: var(--bg-msg-view-color);
-    border-radius: 0 12px 12px 12px;
-    padding: 12px; 
+  position: relative;
+  min-width: 100px;
+  max-width: 400px;
+  background-color: var(--bg-msg-view-color);
+  border-radius: 0 12px 12px;
+  padding: 12px;
 }
 
 .message.user {
-    background-color: var(--bg-accent-color);
-    border-radius: 12px 12px 0 12px;
+  background-color: var(--bg-accent-color);
+  border-radius: 12px 12px 0;
 }
 
 .message.img {
-    position: relative;
-    width: 316px;
-    height: 211px;
+  position: relative;
+  width: 316px;
+  height: 211px;
 }
 
-
 .message__meta {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: var(--subtitle-color);
-    margin: 0 10px 10px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--subtitle-color);
+  margin: 0 10px 10px 0;
 }
 
 .message.img .message__meta {
-    background-color: var(--bg-meta-color);
-    color: var(--white);
-    border-radius: 30px;
-    padding: 2px 5px;
+  background-color: var(--bg-meta-color);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 2px 5px;
 }
 
 .message__read {
-    display: none;
-    background-image: var(--icon-read-url);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 10px;
-    height: 5px;
+  display: none;
+  background-image: var(--icon-read-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+  height: 5px;
 }
 
 .message__read.user {
-    display: inline-block;
+  display: inline-block;
 }
 
 .message__time.user {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
-
-.message__content {
-    
-}
-
-
-
-
-

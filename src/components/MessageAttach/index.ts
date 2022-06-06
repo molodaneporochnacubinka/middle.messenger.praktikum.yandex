@@ -1,1 +1,1 @@
-export {MessageAttach as default} from './message-attach';
+export { MessageAttach as default } from "./message-attach";

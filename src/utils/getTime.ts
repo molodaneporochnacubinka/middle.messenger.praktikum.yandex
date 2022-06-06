@@ -1,6 +1,6 @@
 export function getTime(date: string): string {
-    let dateArr = date.split(' ');
-    let time = dateArr[1];
-    let timeArr = time.split(':');
-    return timeArr[0] + ':' + timeArr[1];
+  const dateArr = date.split(" ");
+  const time = dateArr[1];
+  const timeArr = time.split(":");
+  return `${timeArr[0]}:${timeArr[1]}`;
 }

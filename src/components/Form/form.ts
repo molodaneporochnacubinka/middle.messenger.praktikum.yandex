@@ -1,83 +1,56 @@
-import Block from '../../utils/Block';
-import * as styles from './form.pcss';
-import { validate } from '../../utils/validate';
-import Field from '../Field';
-
-function validateForm(form: Form): any {
-    const data = {};
-    let valid = true;
-    // @ts-ignore
-    for (let child in form.children) {
-        // @ts-ignore
-        let component = form.children[child];
-        if (component instanceof Field) {   
-            // @ts-ignore
-            const name = component.props.name;
-            // @ts-ignore
-            const value = component.props.value;                
-            if (!validate(name, value)) {
-                valid = false;
-                component.setProps({invalid: 1});
-            }
-            else {
-                component.setProps({invalid: 0});
-            }
-            data[name] = value;
-        }
-    }
-    if (valid) {
-        return data;
-    }
-    return valid;
-}
+import Block from "../../utils/Block";
+import * as styles from "./form.pcss";
+import { validateForm } from "../../utils/validateForm";
+import * as mainstyles from "../../layout/css/main.pcss";
 
 interface FormProps {
-    fields: Array<any>;
-    buttonLabel: string;
-    linkHref?: string;
-    linkText?: string;
-    onSubmit?: () => void;
+  fields: Array<any>;
+  buttonLabel: string;
+  linkHref?: string;
+  linkText?: string;
+  onSubmit?: () => void;
 }
 
 export class Form extends Block {
+  static getComponentName = "Form";
 
-    constructor({fields, buttonLabel, linkHref, linkText, onSubmit}: FormProps) {
-        super({
-            fields,
-            buttonLabel,
-            linkHref,
-            linkText,
-            events: 
-            {
-                submit: (event) => {
-    
-                    event.preventDefault();
-                    const valid = validateForm(this);
-                    console.log(valid);
-                    if (valid) {
-                        console.log(valid);
-                        onSubmit();
-                    }
-                },
-                focus: (event) => {
-                    validateForm(this);
-                },
-                blur: (event) => {
-                    validateForm(this);
-                },
-            }
-        });
-    }
+  constructor({
+    fields,
+    buttonLabel,
+    linkHref,
+    linkText,
+    onSubmit,
+  }: FormProps) {
+    super({
+      fields,
+      buttonLabel,
+      linkHref,
+      linkText,
+      events: {
+        submit: (event) => {
+          event.preventDefault();
+          const { valid, data } = validateForm(this);
+          console.log(data);
+          if (valid) {
+            onSubmit();
+          }
+        },
+      },
+    });
+  }
 
-    render() {
-        return `
-        <form class="${styles.form} ${styles.login}">
+  render() {
+    return `
+        <form class="${styles.form}">
             {{#each fields}}
-                {{{ Field label=this.label name=this.name }}}
+                <div class=${styles.field}>
+                    <span class="${styles.field__label} ${mainstyles["text-s"]}">{{this.label}}</span><br>
+                    {{{ Input name=this.name className="field__input" type=this.type value=this.value }}}
+                </div>
             {{/each}}
             {{{ Button label=buttonLabel }}} 
             {{{ Link href=linkHref text=linkText }}}       
         </form>    
         `;
-    }
+  }
 }
