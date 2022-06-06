@@ -6,19 +6,13 @@
 
 ## Стек используемых технологий
 
-1. **JavaScript**
-2. **CSS**, [**PostCSS**](https://postcss.org/)
+1. Типизация - [**TypeScript**](https://www.typescriptlang.org/)
+2. Процессинг CSS - [**PostCSS**](https://postcss.org/)
+3. Линтинг - [**ESlint**](https://eslint.org/), [**Prettier**](https://prettier.io/), [**Stylelint**](https://stylelint.io)
 3. [**Netlify**](https://www.netlify.com/)
 4. [**NodeJS**](https://nodejs.org/)
-5. Сборщик [**Parcel**](https://parceljs.org/)
-6. Шаблонизатор [**Handlebars**](https://handlebarsjs.com/)
-
-
-## Макеты экранов
-
-В качестве основы были взяты макеты экранов от дизайнеров из команды Яндекс.Практикума - [макеты](https://www.figma.com/file/24EUnEHGEDNLdOcxg7ULwV/Chat).
-
-В планах доработать эти макеты и на их основе создать свой дизайн приложения, а ещё помимо светлой темы сделать тёмную тему веб-приложения.
+5. Сборщик - [**Parcel**](https://parceljs.org/)
+6. Шаблонизатор - [**Handlebars**](https://handlebarsjs.com/)
 
 
 ## Установка и запуск приложения
@@ -26,6 +20,8 @@
 Для установки и запуска приложения необходимо выбполнить следующие команды:
 
 - `npm install` — установка стабильной версии,
+- `npm run lint` — линтинг скриптов,
+- `npm run stylelint` — линтинг стилей,
 - `npm run build` — сборка стабильной версии,
 - `npm start` — запуск приложения.
 
@@ -35,9 +31,3 @@
 ## Домен на Netlify
 
 https://trusting-jones-fc4d83.netlify.app/
-
-
-## Ссылка на pull-request
-
-https://github.com/molodaneporochnacubinka/middle.messenger.praktikum.yandex/pull/1
-
