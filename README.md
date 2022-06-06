@@ -10,8 +10,8 @@
 3. Линтинг - [**ESlint**](https://eslint.org/), [**Prettier**](https://prettier.io/), [**Stylelint**](https://stylelint.io)
 3. [**Netlify**](https://www.netlify.com/)
 4. [**NodeJS**](https://nodejs.org/)
-5. Сборщик [**Parcel**](https://parceljs.org/)
-6. Шаблонизатор [**Handlebars**](https://handlebarsjs.com/)
+5. Сборщик - [**Parcel**](https://parceljs.org/)
+6. Шаблонизатор - [**Handlebars**](https://handlebarsjs.com/)
 
 ## Установка и запуск приложения
 
@@ -19,7 +19,7 @@
 
 - `npm install` — установка стабильной версии,
 - `npm run lint` — линтинг скриптов,
-- `npm run lint` — линтинг стилей,
+- `npm run stylelint` — линтинг стилей,
 - `npm run build` — сборка стабильной версии,
 - `npm start` — запуск приложения.
 

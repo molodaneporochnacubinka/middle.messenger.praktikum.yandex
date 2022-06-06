@@ -1,8 +1,8 @@
-import { ChatsPage } from "../../modules/Chats/chats";
-import { renderDOM } from "../../utils/renderDOM";
-import { Button } from "../../components/Button/Button";
-import { Link } from "../../components/Link/Link";
-import { Chat } from "../../components/Chat/Chat";
+import ChatsPage from "../../modules/Chats";
+import renderDOM from "../../utils/renderDOM";
+import Button from "../../components/Button";
+import Link from "../../components/Link";
+import Chat from "../../components/Chat";
 import registerComponent from "../../utils/registerComponent";
 import data from "../../../data/data.json";
 

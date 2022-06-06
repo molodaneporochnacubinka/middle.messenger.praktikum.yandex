@@ -1,10 +1,10 @@
-import { ProfilePage } from "../../modules/Profile/profile";
-import { renderDOM } from "../../utils/renderDOM";
-import { Button } from "../../components/Button/button";
-import { Input } from "../../components/Input/input";
-import { FormInfo } from "../../components/FormInfo/form-info";
-import { Link } from "../../components/Link/link";
-import { Modal } from "../../components/Modal/modal";
+import ProfilePage from "../../modules/Profile";
+import renderDOM from "../../utils/renderDOM";
+import Button from "../../components/Button";
+import Input from "../../components/Input";
+import FormInfo from "../../components/FormInfo";
+import Link from "../../components/Link";
+import Modal from "../../components/Modal";
 import registerComponent from "../../utils/registerComponent";
 import data from "../../../data/data.json";
 

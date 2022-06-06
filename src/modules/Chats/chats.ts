@@ -1,5 +1,5 @@
 import Block from "../../utils/Block";
-import { validateComponent } from "../../utils/validateComponent";
+import validateComponent from "../../utils/validateComponent";
 import * as styles from "./chats.pcss";
 import * as mainstyles from "../../layout/css/main.pcss";
 

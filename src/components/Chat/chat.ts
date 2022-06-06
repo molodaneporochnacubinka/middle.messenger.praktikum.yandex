@@ -1,5 +1,5 @@
 import Block from "../../utils/Block";
-import { changeLocation } from "../../utils/changeLocation";
+import changeLocation from "../../utils/changeLocation";
 import * as styles from "./chat.pcss";
 import * as mainstyles from "../../layout/css/main.pcss";
 

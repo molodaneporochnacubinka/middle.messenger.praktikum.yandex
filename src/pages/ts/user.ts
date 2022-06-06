@@ -1,9 +1,9 @@
-import { ProfilePage } from "../../modules/Profile/profile";
-import { renderDOM } from "../../utils/renderDOM";
-import { Button } from "../../components/Button/button";
-import { Input } from "../../components/Input/input";
-import { FormInfo } from "../../components/FormInfo/form-info";
-import { Link } from "../../components/Link/link";
+import ProfilePage from "../../modules/Profile";
+import renderDOM from "../../utils/renderDOM";
+import Button from "../../components/Button";
+import Input from "../../components/Input";
+import FormInfo from "../../components/FormInfo";
+import Link from "../../components/Link";
 import registerComponent from "../../utils/registerComponent";
 import data from "../../../data/data.json";
 

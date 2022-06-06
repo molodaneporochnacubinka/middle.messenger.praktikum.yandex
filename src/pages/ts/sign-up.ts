@@ -1,9 +1,9 @@
-import { LoginPage } from "../../modules/Login/login";
-import { renderDOM } from "../../utils/renderDOM";
-import { Button } from "../../components/Button/button";
-import Input from "../../components/input";
-import Link from "../../components/link";
-import Form from "../../components/form";
+import LoginPage from "../../modules/Login";
+import renderDOM from "../../utils/renderDOM";
+import Button from "../../components/Button";
+import Input from "../../components/Input";
+import Link from "../../components/Link";
+import Form from "../../components/Form";
 import registerComponent from "../../utils/registerComponent";
 
 document.addEventListener("DOMContentLoaded", () => {

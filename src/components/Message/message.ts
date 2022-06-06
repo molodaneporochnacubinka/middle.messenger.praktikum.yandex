@@ -26,7 +26,7 @@ export class Message extends Block {
         <div class="${styles.message__container} {{containerClass}}">
             {{#if byUser}}
                 <div class="${styles.message} ${styles.user} ${styles.text}">
-                    <div class="${styles.message__content} ${mainstyles["text-s-m"]}">
+                    <div class="${mainstyles["text-s-m"]}">
                         {{text}}
                     </div>
                     <div class="${styles.message__meta}">
@@ -38,7 +38,7 @@ export class Message extends Block {
                 </div>  
             {{else}}
                 <div class="${styles.message} ${styles.text}">
-                    <div class="${styles.message__content} ${mainstyles["text-s-m"]}">
+                    <div class="${mainstyles["text-s-m"]}">
                         {{text}}
                     </div>
                     <div class="${styles.message__meta}">

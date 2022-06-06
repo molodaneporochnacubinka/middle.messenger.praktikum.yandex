@@ -1,6 +1,6 @@
 import Block from "../../utils/Block";
 import * as styles from "./form-info.pcss";
-import { validateComponent } from "../../utils/validateComponent";
+import validateComponent from "../../utils/validateComponent";
 import * as mainstyles from "../../layout/css/main.pcss";
 
 interface FormInfoProps {

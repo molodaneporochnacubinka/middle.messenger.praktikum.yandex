@@ -1,5 +1,5 @@
-import { ErrorPage } from "../../modules/Error/error";
-import { renderDOM } from "../../utils/renderDOM";
+import ErrorPage from "../../modules/Error";
+import renderDOM from "../../utils/renderDOM";
 import Link from "../../components/Link";
 import registerComponent from "../../utils/registerComponent";
 

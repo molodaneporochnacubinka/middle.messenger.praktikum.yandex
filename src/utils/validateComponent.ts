@@ -2,7 +2,7 @@ import { validate } from "./validate";
 import Block from "./Block";
 import Input from "../components/Input";
 
-export function validateComponent(component: Block): any {
+export default function validateComponent(component: Block): any {
   const data = {};
   let valid = true;
   for (const child in component.children) {

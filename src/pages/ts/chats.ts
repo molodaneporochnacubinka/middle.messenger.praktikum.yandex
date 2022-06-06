@@ -1,11 +1,11 @@
-import { ChatsPage } from "../../modules/Chats/chats";
-import { renderDOM } from "../../utils/renderDOM";
-import { Button } from "../../components/Button/button";
-import { Input } from "../../components/Input/input";
-import { Link } from "../../components/Link/link";
-import { Chat } from "../../components/Chat/chat";
-import { Message } from "../../components/Message/message";
-import { MessageAttach } from "../../components/MessageAttach/message-attach";
+import ChatsPage from "../../modules/Chats";
+import renderDOM from "../../utils/renderDOM";
+import Button from "../../components/Button";
+import Input from "../../components/Input";
+import Link from "../../components/Link";
+import Chat from "../../components/Chat";
+import Message from "../../components/Message";
+import MessageAttach from "../../components/MessageAttach";
 import registerComponent from "../../utils/registerComponent";
 import data from "../../../data/data.json";
 
